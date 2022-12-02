@@ -408,6 +408,8 @@ class basic_ops(ClusterSetup):
         # test starts failing document size=2MB, No of docs = 221,
         # load 250 docs generate docs with size >= 1MB , See MB-29333
 
+        print("trying to run this test")
+
         self.doc_size *= 1024 * 1024
         gens_load = self.generate_docs_bigdata(
             docs_per_day=self.num_items, document_size=self.doc_size)
